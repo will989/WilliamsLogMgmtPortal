@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WilliamsLogMgmtPortal", "WilliamsLogMgmtPortal\WilliamsLogMgmtPortal.csproj", "{B0A6CB6F-4342-41B8-86E6-323FDEFC0A02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WilliamsLogMgmtPortal.Tests", "WilliamsLogMgmtPortal.Tests\WilliamsLogMgmtPortal.Tests.csproj", "{9C6492A8-FA90-4F7A-B215-9C807B712B75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0A6CB6F-4342-41B8-86E6-323FDEFC0A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A6CB6F-4342-41B8-86E6-323FDEFC0A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A6CB6F-4342-41B8-86E6-323FDEFC0A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A6CB6F-4342-41B8-86E6-323FDEFC0A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6492A8-FA90-4F7A-B215-9C807B712B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6492A8-FA90-4F7A-B215-9C807B712B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6492A8-FA90-4F7A-B215-9C807B712B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6492A8-FA90-4F7A-B215-9C807B712B75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

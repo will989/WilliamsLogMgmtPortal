@@ -1,0 +1,61 @@
+﻿@model WilliamsLogMgmtPortal.Models.Message
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Message</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CorrelationIdentifier)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CorrelationIdentifier)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.SendingOrgId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SendingOrgId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ReceivingOrgId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReceivingOrgId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Severity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Severity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OrgMessage)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OrgMessage)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Timestamp)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Timestamp)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

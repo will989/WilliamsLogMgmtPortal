@@ -1,0 +1,63 @@
+﻿@model IEnumerable<WilliamsLogMgmtPortal.Models.Message>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CorrelationIdentifier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SendingOrgId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceivingOrgId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Severity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrgMessage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CorrelationIdentifier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SendingOrgId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceivingOrgId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Severity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrgMessage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Timestamp)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MessageId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MessageId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MessageId })
+        </td>
+    </tr>
+}
+
+</table>
